@@ -16,7 +16,7 @@ Download the classes from github and put them into a bluej project.
 
 4. You will need to re-compile CountExpr and BioGram (why?) to run your own example
 
-5. If you come up with a good one then upload it to the wiki along with your CountExpr class. It may look good, or perhaps be generated in some artistic way.
+5. Come up with your own CountExpr class. It may look good, or perhaps be generated in some artistic way.
 
 6. Have a look at the Pixel class and see if you can work out what it's doing. To understand this you will need a knowledge of binary, so miss this out if you don't already know about binary.
 
