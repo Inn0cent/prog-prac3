@@ -25,11 +25,13 @@ Download the classes from github and put them into a bluej project.
 1. In a new project define a new class called _Calculation_
 
 2. Without writing any fields or constructors, write two get methods to return:
+
   * number of hours in a week
   * number of seconds in a year
 
-3.  *  Add two real-number fields called _x_ and _y_
-  * Add a constructor for the the class
+3. Add to the _Calculation_ class two real-number fields called _x_ and _y_
+
+  * Write a constructor for the the class
   * Write get and set methods for _x_ and _y_
 
 4. Write more methods which do calculations with _x_ and _y_:
