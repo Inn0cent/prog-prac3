@@ -1,12 +1,12 @@
-#Introduction to Programming
+# Introduction to Programming
 
-##Practical 3
+## Practical 3
 
-###Instructions
+### Instructions
 
 Download the classes from github and put them into a bluej project. 
 
-###Level 1: Play with Expressions in the Biogram
+### Level 1: Play with Expressions in the Biogram
 
 1. Compile all the classes and construct a BioGram with parameters width=500, height=200
 
@@ -20,7 +20,7 @@ Download the classes from github and put them into a bluej project.
 
 6. Have a look at the Pixel class and see if you can work out what it's doing. To understand this you will need a knowledge of binary, so miss this out if you don't already know about binary.
 
-###Level 2: Expressions with numbers
+### Level 2: Expressions with numbers
 
 1. In a new project define a new class called _Calculation_
 
@@ -42,7 +42,7 @@ Download the classes from github and put them into a bluej project.
    * Given quadratic coefficients _a_, _b_ and _c_, put the roots of the quadratic equation into the _x_ and _y_
 
 
-###Level 3: Harder problems
+### Level 3: Harder problems
 
 You don't necessarily need to complete all of these to get a good mark, some of them are challenging. These calculations should be done inside methods of your _Calculation_ class but do not involve the fields _x_ and _y_. All inputs to the calculations should be parameters and all outputs should be return values.
 
