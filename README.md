@@ -12,11 +12,11 @@ Download the classes from github and put them into a bluej project.
 
 2. Admire the pretty pattern
 
-3. Adapt the CountExpr class to make your own ways of stepping and finishing
+3. Adapt the CountExpr class to make your own ways of stepping and finishing: try changing the values of the constants and the mathematical functions used
 
 4. You will need to re-compile CountExpr and BioGram (why?) to run your own example
 
-5. Come up with your own CountExpr class. It may look good, or perhaps be generated in some artistic way.
+5. Come up with your own CountExpr class. Basically this means rewriting the methods from scratch rather than tnikering with them. You might also add some other fields which are used. The produced Biogram should look good, or perhaps be generated in some artistic way.
 
 6. Have a look at the Pixel class and see if you can work out what it's doing. To understand this you will need a knowledge of binary, so miss this out if you don't already know about binary.
 
