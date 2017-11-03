@@ -28,7 +28,7 @@ public class BioGram
                     count++;
                     counter.doOnce();
                 }
-		//                System.out.println("x "+i+" y "+j+" count "+count);
+                //                System.out.println("x "+i+" y "+j+" count "+count);
                 if(count<=2){
                     p.B=255;
                 }
@@ -53,14 +53,14 @@ public class BioGram
         c.drawImage(bimg,0,0);
     }
 
-	public static void main (String[] args){
-	if(args.length==2){
-		new BioGram(new Integer(args[0]), new Integer(args[1]));
-	}	
-	else{
-		new BioGram(200,200);
-	}
-	}
+        public static void main (String[] args){
+    if(args.length==2){
+        new BioGram(new Integer(args[0]), new Integer(args[1]));
+    }   
+    else{
+        new BioGram(200,200);
+    }
+    }
 
 }
 
