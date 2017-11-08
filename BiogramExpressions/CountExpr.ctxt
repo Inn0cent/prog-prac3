@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.params=startx\ starty
 comment0.target=CountExpr(int,\ int)
-comment1.params=
-comment1.target=void\ doOnce()
+comment1.params=count
+comment1.target=void\ doOnce(int)
 comment2.params=
-comment2.target=boolean\ finished()
-numComments=3
+comment2.target=void\ swap()
+comment3.params=
+comment3.target=boolean\ finished()
+numComments=4

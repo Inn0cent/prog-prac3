@@ -26,7 +26,7 @@ public class BioGram
                 CountExpr counter=new CountExpr(i,j);
                 while(count<6 && !counter.finished()){
                     count++;
-                    counter.doOnce();
+                    counter.doOnce(count);
                 }
                 //                System.out.println("x "+i+" y "+j+" count "+count);
                 if(count<=2){
