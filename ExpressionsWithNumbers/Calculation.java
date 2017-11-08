@@ -18,6 +18,19 @@ public class Calculation
     
     //Level 2
     
+    public void setXandY(double xSet, double ySet){
+        x = xSet;
+        y = ySet;
+    }
+    
+    public double getX(){
+        return x;
+    }
+    
+    public double getY(){
+        return y;
+    }
+    
     public double average(){
         return (x+y)/2.0;
     }
@@ -30,6 +43,13 @@ public class Calculation
         }
     }
     
+        public String swap(){
+        double temp = x;
+        x = y;
+        y = temp;
+        return x+" "+y;
+    }
+        
     public double CtoF(){
         y = (x*1.8)+32;
         return y;
@@ -37,7 +57,6 @@ public class Calculation
     
     public String roots(int a, int b, int c){
         double sqroot = ((b*b)-(4*a*c))/(2*a);
-        System.out.println(sqroot);
         if (sqroot == 0){
             x = -b;
             y = -b;
@@ -47,13 +66,6 @@ public class Calculation
             x = -b + sqroot;
             y = -b - sqroot;
         }
-        return x+" "+y;
-    }
-    
-    public String swap(){
-        double temp = x;
-        x = y;
-        y = temp;
         return x+" "+y;
     }
     
@@ -76,12 +88,17 @@ public class Calculation
         }
     }
     
-    public void dayAndYears(String val){
+    public String dayAndYears(String val){
         String DD = val.split("/")[0];
-        String YY = val.split("/")[2];
-        System.out.println(DD);
-        System.out.println(YY);
-        System.out.println();
+        String YYYY = val.split("/")[2];
+        if (YYYY.length() == 2){
+            if (Integer.valueOf(YYYY) < 20){
+                YYYY = "20" + YYYY;
+            }else{
+                YYYY = "19" + YYYY;
+            }
+        }
+        return "Day: " + DD + " Year: " + YYYY;
     }
     
     public int minCoins(int money){
@@ -96,7 +113,7 @@ public class Calculation
         return coins;
     }
     
-    public int dayOfWeek(int day, int month, int year){
+    public String dayOfWeek(int day, int month, int year){
         year -= 2001;
         day --;
         month --;
@@ -105,6 +122,7 @@ public class Calculation
         int daysInMonth = 0;
         int dayOfWeek;
         int[] listOfMonthLength = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        String[] daysInWeek = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
         if (year%4 == 0 && month > 2){
             daysInMonth += 1;
         }
@@ -113,6 +131,6 @@ public class Calculation
         }
         daysSinceMonday = day + daysInMonth + daysInYear;
         dayOfWeek = daysSinceMonday % 7;
-        return dayOfWeek;
+        return daysInWeek[dayOfWeek];
     }
 }
